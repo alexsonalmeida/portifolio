@@ -1,0 +1,551 @@
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 2rem;
+    align-items: center;
+}
+
+.cabecalho h2 {
+    font-size: 1.80rem;
+    position: relative;
+}
+
+.cabecalho h2::after {
+    content: "";
+    display: block;
+    background-image: linear-gradient(#52aa00, #5ef307);
+    width: 0.6rem;
+    height: 5rem;
+    position: absolute;
+    right: -0.8rem;
+    top: 6rem;    
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.cabecalho h2::before {
+    content: "";
+    display: block;
+    background-image: linear-gradient(#52aa00, #5ef307);
+    width: 0.6rem;
+    height: 4rem;
+    position: absolute;
+    right: -1.38rem;
+    top: 6.8rem;    
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.navbar {
+    justify-content: end;
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.25rem;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+}
+
+.mainInfos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem 10rem;
+    margin-bottom: 6rem;
+    align-items: center;
+}
+
+.mainInfos img {
+    justify-self: left;
+    max-width: 100vw;
+    max-height: 55vh;
+}
+
+.infosProfissionais h2 {
+    margin: 0rem;
+    font-size: 3.2rem;
+}
+
+.infosProfissionais p {
+    font-size: 1.25rem;
+}
+
+/*Estilos da secao de experiencia*/
+
+.infoExp {
+    margin: 0rem 8rem;
+    display: grid;
+    padding: 3rem 0rem 0rem 0rem;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0rem;
+}
+
+.tituloExp {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    color: #e7e7e7;
+    word-break: break-all;
+    font-size: 9rem;
+    margin-right: 3rem;
+}
+
+.tituloExp h3 {
+    margin-top: 0rem;
+    padding: 0rem;
+}
+
+.expArea {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.descricaoExp {
+    font-size: 1.25rem;
+    padding-top: 0.85rem;
+}
+
+.descrItemExp {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+}
+
+.descrItemExp p {
+    color: #525252;
+}
+
+.listExp {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding-bottom: 12rem;
+}
+
+.listExp li {
+    background-color: #f0f0f0;
+    border-radius: 0.4rem;
+    padding: 1.2rem;
+}
+
+.listExp li h4 {
+    margin: 0rem;
+}
+
+.listExp li p {
+    margin: 0rem;
+}
+
+.itemExp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem 4rem;
+}
+
+.tituloExp ::after {
+    content: "";
+    display: inline-block;
+    background-image: linear-gradient(#52aa00, #5ef307);
+    width: 0.28rem;
+    height: 1.3rem;
+    position: absolute;
+    border-radius: 0.15rem;
+    right: 46rem;
+    top: 57rem;
+}
+
+.tituloExp ::before {
+    content: "";
+    display: inline-block;
+    background-image: linear-gradient(#52aa00, #5ef307);
+    width: 0.28rem;
+    height: 1.3rem;
+    position: absolute;
+    border-radius: 0.15rem;
+    right: 46rem;
+    top: 46rem;
+}
+
+.cardsTecs {
+    display: flex;
+    margin-top: 0.85rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.cardsTecs span {
+    background-color: #ffffff;
+    padding: 0.45rem;
+    border-radius: 0.3125rem;
+}
+
+/*Estilos da secao de Formacao*/
+
+.formacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #141414;
+    gap: 0.01rem;
+    padding: 6rem;
+    padding-bottom: 0rem;
+}
+
+.tituloFormacao {
+    grid-row: 1 / -1;
+    color: #000000;
+}
+
+.tituloFormacao h3 {
+    margin: 0rem;
+    font-size: 9rem;
+    word-break: break-all;
+}
+
+.descricaoFormac {
+    color: #a3a3a3;
+    font-size: 1.25rem;
+}
+
+.listFormac {
+    display: flex;
+}
+
+.listFormac li {
+    background-color: #000000;
+    padding: 0.2rem 1.12rem;
+}
+
+.listFormac li::before {
+    content: "";
+    display: inline-block;
+    background-image: linear-gradient(#52aa00, #5ef307);
+    width: 0.25rem;
+    height: 1.5rem;
+    position: absolute;
+    border-radius: 0.15rem;
+    right: 42rem;
+    top: 99rem;  
+}
+
+.listFormac li p {
+    color: #a3a3a3;
+}
+
+.listFormac li h4 {
+    margin: 0rem 0rem 3rem 0rem;
+    font-size: 1.125rem;
+    color: #ffffff;
+}
+
+.secaoCursos h4 {
+    color: #a3a3a3;
+    margin: 2rem 0rem;
+    font-size: 0.875rem;
+}
+
+.listLineCursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15rem;
+}
+
+.listCursos li h5 {
+    display: inline;
+    color: #ffffff;
+    font-size: 1.125rem;
+    margin: 0.15rem 0rem;
+    margin-bottom: 2rem;
+}
+
+.listCursos li p {
+    display: inline;
+    margin: 0.15rem 0rem;
+    color: #a3a3a3;
+    font-size: 1.125rem;
+}
+
+/*Estilos da secao idioma*/
+
+.secaoIdiomas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+}
+
+.secaoIdiomas h4 {
+    grid-column: 1 / -1;
+    color: #a3a3a3;
+    font-size: 0.875rem;
+    margin: 0rem;
+    margin-bottom: 0rem;
+}
+
+.listIdiomas li {
+    margin: 0rem;
+    display: flex;
+    gap: 0rem 0.7rem;
+    margin-bottom: 3.0rem;
+}
+
+.listIdiomas li h5 {
+    margin: 0rem;
+    font-size: 1.125rem;
+    color: #ffffff;
+    padding-bottom: 2.5rem;
+}
+
+.listIdiomas li p {
+    margin: 0rem;
+    font-size: 1.125rem;
+    color: #a3a3a3;
+}
+
+/*Estilos do rodape*/
+
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #000000;
+    padding: 3rem 8rem;
+    gap: 6rem;
+}
+
+.rodape::after {
+    content: "";
+    display: inline-block;
+    background-color: #46860a;
+    width: 0.75rem;
+    height: 4rem;
+    position: absolute;
+    right: 81rem;
+    top: 131rem;
+    transform: rotate(37deg);
+}
+
+.rodape::before {
+    content: "";
+    display: inline-block;
+    background-color:  #5ef307;
+    width: 0.75rem;
+    height: 4rem;
+    position: absolute;
+    right: 80.05rem;
+    top: 131rem;
+    transform: rotate(37deg);
+}
+
+.rodapeDescription {
+    margin-top: 4.5rem;
+    color: #a3a3a3;
+    padding-right: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.listContatos {
+    margin-top: 5rem;
+}
+
+.listContatos li {
+    color: #ffffff;
+    font-size: 2.25rem;
+}
+
+.direitos {
+    color: #525252;
+    grid-column: 1 / -1;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0rem;
+    margin: 0rem;
+    max-width: 1600px;
+    margin: 0rem auto;
+}
+
+ul {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/*Secao media querys*/
+
+@media (max-width:1090px) {
+    .cabecalho h2::after {
+        display: none;
+    }    
+
+    .cabecalho h2::before {
+        display: none;
+    }    
+}
+
+@media (max-width: 1350px) {
+    .tituloExp ::before {
+        display: none;
+    }
+
+    .tituloExp ::after {
+        display: none;
+    }
+
+    .listFormac li::before {
+        display: none;
+    }
+
+    .rodape::after {
+        display: none;
+    }
+
+    .rodape::before {
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+    .mainInfos {
+        margin-left: 1rem;
+    }
+
+    .listLineCursos {
+        grid-template-columns: auto auto ;
+    }
+
+    .listLineCursos p {
+        text-align: right;
+    }
+}
+
+@media (max-width:955px) {
+    .rodape {
+        grid-template-columns: auto;
+        padding: 0rem 4rem;
+        gap: 0rem;
+    }
+}
+
+@media (max-width:915px) {
+    .mainInfos {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .infosProfissionais {
+        padding: 2rem 0rem 0rem 0rem;
+        text-align: center;
+    }
+
+    .infosProfissionais h2 {
+        margin: 2rem 0rem;
+    }
+
+    .mainInfos img {
+        justify-self: center;
+    }
+
+    .infoExp {
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 0rem;
+        gap: 2rem;
+    }
+
+    .tituloExp {
+        color: #525252;
+        text-align: center;
+        font-size: 5rem;
+        margin: 0rem;
+    }
+
+    .expArea {
+        padding: 0rem 3rem;
+        gap: 1.5rem;
+    }
+
+    .listExp {
+        margin-bottom: 3rem;
+        padding-bottom: 0rem;
+        gap: 1.5rem;
+    }
+
+    .formacao {
+        grid-template-columns: 1fr;
+        padding: 2rem 4rem;
+        gap: 1.7rem;
+    }
+
+    .tituloFormacao h3 {
+        text-align: center;
+        color: #e7e7e7;
+        font-size: 5rem;
+    }
+
+    .secaoIdiomas {
+        padding: 0rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:651px) {
+    .tituloExp {
+        font-size: 3rem;
+    }
+
+    .descricaoExp{
+        text-align: center;
+    }
+}
+
+@media (max-width:616px) {
+    .tituloFormacao h3 {
+        font-size: 3.5rem;
+    }    
+}
+
+@media (max-width:600px) {
+    .cabecalho {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .cabecalho h2 {
+        margin: 1rem 0rem;
+    }
+
+    .navbar {
+        gap: 1.5rem;
+    }
+
+    .navbar li {
+        background-color: #e7e7e7;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+    }
+
+    .infosProfissionais h2 {
+        font-size: 2.3rem;
+    }
+
+    .infosProfissionais p {
+        font-size: 1.18rem;
+    }
+}
