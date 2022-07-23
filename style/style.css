@@ -541,7 +541,6 @@ h1,h2,h3,h4,h5 {
 
 @media (max-width: 520px) {
     .rodape {
-        background-color: blue;
         padding: 1rem;
     }
 
