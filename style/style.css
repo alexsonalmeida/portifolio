@@ -143,7 +143,7 @@
 .itemExp {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0rem 4rem;
+    gap: 4rem;
     position: relative;
 }
 
@@ -435,7 +435,7 @@ h1,h2,h3,h4,h5 {
     .infosProfissionais h2::after {
         width: 3rem;
         height: 0.4rem;
-        left: 46%;
+        left: 44%;
         top: 3.2rem;    
         transform: rotate(0);
     }
@@ -540,6 +540,27 @@ h1,h2,h3,h4,h5 {
 }
 
 @media (max-width: 520px) {
+    .expArea {
+       padding: 1rem;
+    }
+
+    .itemExp {
+        gap: 1rem;
+    }
+
+    .formacao {
+        padding-left: 2rem;
+    }
+
+    .listFormac li::before {
+        width: 1.8rem;
+        height: 0.3rem;
+        position: absolute;
+        border-radius: 0.15rem;
+        left: 1.1rem;
+        top: 0rem;  
+    }
+
     .rodape {
         padding: 1rem;
     }
