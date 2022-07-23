@@ -10,32 +10,6 @@
     position: relative;
 }
 
-.cabecalho h2::after {
-    content: "";
-    display: block;
-    background-image: linear-gradient(#52aa00, #5ef307);
-    width: 0.6rem;
-    height: 5rem;
-    position: absolute;
-    right: -0.8rem;
-    top: 6rem;    
-    transform: rotate(45deg);
-    z-index: -1;
-}
-
-.cabecalho h2::before {
-    content: "";
-    display: block;
-    background-image: linear-gradient(#52aa00, #5ef307);
-    width: 0.6rem;
-    height: 4rem;
-    position: absolute;
-    right: -1.38rem;
-    top: 6.8rem;    
-    transform: rotate(45deg);
-    z-index: -1;
-}
-
 .navbar {
     justify-content: end;
     display: flex;
@@ -61,6 +35,10 @@
     max-height: 55vh;
 }
 
+.infosProfissionais {
+    position: relative;
+}
+
 .infosProfissionais h2 {
     margin: 0rem;
     font-size: 3.2rem;
@@ -70,6 +48,31 @@
     font-size: 1.25rem;
 }
 
+.infosProfissionais h2::after {
+    content: "";
+    display: block;
+    background-image: linear-gradient(#52aa00, #5ef307);
+    width: 0.6rem;
+    height: 5rem;
+    position: absolute;
+    left: 0.2rem;
+    top: -1.7rem;    
+    transform: rotate(50deg);
+    z-index: -1;
+}
+
+.infosProfissionais h2::before {
+    content: "";
+    display: block;
+    background-image: linear-gradient(#52aa00, #5ef307);
+    width: 0.6rem;
+    height: 4rem;
+    position: absolute;
+    left: 0.745rem;
+    top: -0.9rem;    
+    transform: rotate(50deg);
+    z-index: -1;
+}
 /*Estilos da secao de experiencia*/
 
 .infoExp {
@@ -139,30 +142,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0rem 4rem;
+    position: relative;
 }
 
-.tituloExp ::after {
+.itemExp ::after {
     content: "";
     display: inline-block;
     background-image: linear-gradient(#52aa00, #5ef307);
     width: 0.28rem;
-    height: 1.3rem;
+    height: 1.5rem;
     position: absolute;
     border-radius: 0.15rem;
-    right: 46rem;
-    top: 57rem;
-}
-
-.tituloExp ::before {
-    content: "";
-    display: inline-block;
-    background-image: linear-gradient(#52aa00, #5ef307);
-    width: 0.28rem;
-    height: 1.3rem;
-    position: absolute;
-    border-radius: 0.15rem;
-    right: 46rem;
-    top: 46rem;
+    left: -1.3rem;
+    top: 0.3rem;
 }
 
 .cardsTecs {
@@ -213,18 +205,19 @@
 .listFormac li {
     background-color: #000000;
     padding: 0.2rem 1.12rem;
+    position: relative;
 }
 
 .listFormac li::before {
     content: "";
     display: inline-block;
     background-image: linear-gradient(#52aa00, #5ef307);
-    width: 0.25rem;
+    width: 0.3rem;
     height: 1.5rem;
     position: absolute;
     border-radius: 0.15rem;
-    right: 42rem;
-    top: 99rem;  
+    right: 15rem;
+    top: 1.5rem;  
 }
 
 .listFormac li p {
@@ -308,6 +301,7 @@
     background-color: #000000;
     padding: 3rem 8rem;
     gap: 6rem;
+    position: relative;
 }
 
 .rodape::after {
@@ -315,10 +309,10 @@
     display: inline-block;
     background-color: #46860a;
     width: 0.75rem;
-    height: 4rem;
+    height: 5rem;
     position: absolute;
-    right: 81rem;
-    top: 131rem;
+    left: 4rem;
+    top: -2rem;
     transform: rotate(37deg);
 }
 
@@ -327,10 +321,10 @@
     display: inline-block;
     background-color:  #5ef307;
     width: 0.75rem;
-    height: 4rem;
+    height: 5rem;
     position: absolute;
-    right: 80.05rem;
-    top: 131rem;
+    left: 4.96rem;
+    top: -2rem;
     transform: rotate(37deg);
 }
 
@@ -387,36 +381,15 @@ h1,h2,h3,h4,h5 {
 
 /*Secao media querys*/
 
-@media (max-width:1090px) {
-    .cabecalho h2::after {
-        display: none;
+@media (max-width:1250px) {
+    .itemExp ::after {
+        width: 2rem;
+        height: 0.25rem;
+        top: -1.2rem;
+        left: 0rem;
+        background-image: linear-gradient(to right, #52aa00, #5ef307);
+        border-radius: 0.5rem;
     }    
-
-    .cabecalho h2::before {
-        display: none;
-    }    
-}
-
-@media (max-width: 1350px) {
-    .tituloExp ::before {
-        display: none;
-    }
-
-    .tituloExp ::after {
-        display: none;
-    }
-
-    .listFormac li::before {
-        display: none;
-    }
-
-    .rodape::after {
-        display: none;
-    }
-
-    .rodape::before {
-        display: none;
-    }
 }
 
 @media (max-width:1000px) {
@@ -455,6 +428,18 @@ h1,h2,h3,h4,h5 {
 
     .infosProfissionais h2 {
         margin: 2rem 0rem;
+    }
+
+    .infosProfissionais h2::after {
+        width: 3rem;
+        height: 0.4rem;
+        left: 46%;
+        top: 3.2rem;    
+        transform: rotate(0);
+    }
+    
+    .infosProfissionais h2::before {
+        display: none;
     }
 
     .mainInfos img {
