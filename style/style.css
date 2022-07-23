@@ -538,3 +538,30 @@ h1,h2,h3,h4,h5 {
         font-size: 1.18rem;
     }
 }
+
+@media (max-width: 450px) {
+    
+
+    .rodape {
+        padding: 1rem;
+    }
+
+    .rodapeDescription {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        font-size: 1.1rem;
+    }
+
+    .listContatos {
+        margin: 0rem;
+        font-size: 1.4rem;
+    }
+
+    .listContatos p {
+        font-size: 2rem;
+    }
+
+    .direitos {
+        padding: 0rem;
+    }
+}
