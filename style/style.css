@@ -539,16 +539,15 @@ h1,h2,h3,h4,h5 {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 520px) {
     .rodape {
         padding: 1rem;
-        background-color: #a3a3a3;
     }
 
     .rodapeDescription {
         padding-left: 0rem;
         padding-right: 0rem;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .listContatos {
@@ -556,10 +555,10 @@ h1,h2,h3,h4,h5 {
     }
 
     .listContatos p {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .direitos {
-        padding: 0rem;
+        font-size: 1rem;
     }
 }
