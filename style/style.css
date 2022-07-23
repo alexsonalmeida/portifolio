@@ -540,6 +540,10 @@ h1,h2,h3,h4,h5 {
 }
 
 @media (max-width: 580px) {
+    .mainInfos {
+        margin: 0rem;
+    }
+    
     .expArea {
        padding: 1rem;
     }
